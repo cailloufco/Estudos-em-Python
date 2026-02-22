@@ -6,10 +6,7 @@
 - Até 20 anos: SÊNIOR
 - Acima: MASTER
 '''
-
 from time import sleep
-
-#Pegando ano atual
 from datetime import date
 anoAtual= date.today().year
 
@@ -18,8 +15,21 @@ print('\nConfederação Nacional de Natação\nInscrição em categoria de acord
 try:
     anoDeNascimento = int(input('Digite o ano em que você nasceu: '))
     idadeDoAtleta = anoAtual - anoDeNascimento
-    if idadeDoAtleta < 9 or idadeDoAtleta > 100:
-        print('Você não possui idade para participar de nenhuma categoria', sleep(1.5))
+    if idadeDoAtleta < 5 or idadeDoAtleta > 100:
+        print(f'Você não possui idade para participar de nenhuma categoria , idade {idadeDoAtleta} anos')
+        sleep(1.5)
         exit()
 except:
     print('Insira uma data válida')
+    exit()
+
+if idadeDoAtleta > 20:
+    print(f'Você está na categoria MASTER , idade {idadeDoAtleta}')
+elif idadeDoAtleta > 19:
+    print(f'Você está na categoria SENIOR , idade {idadeDoAtleta}')
+elif idadeDoAtleta > 14:
+    print(f'Você está na categoria JUNIOR , idade {idadeDoAtleta}')
+elif idadeDoAtleta > 9:
+    print(f'Você está na categoria INFANTIL , idade {idadeDoAtleta}')
+else:
+    print(f'Você está na categoria MIRIM , idade {idadeDoAtleta}')
