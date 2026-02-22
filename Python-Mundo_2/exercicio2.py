@@ -37,10 +37,3 @@ while True:
                 break
     except ValueError:
         break
-        
-
-    
-    
-
-
-
