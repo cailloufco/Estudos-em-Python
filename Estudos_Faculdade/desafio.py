@@ -1,8 +1,8 @@
 #crie um algoritmo que peça ao usuario tres notas e imprima a media das tres notas
 try:
-    nota1 = int(input('Primeira nota: '))
-    nota2 = int(input('Segunda nota: '))
-    nota3 = int(input('Terceira nota: '))
+    nota1 = float(input('Primeira nota: '))
+    nota2 = float(input('Segunda nota: '))
+    nota3 = float(input('Terceira nota: '))
 except:
     print('Digite uma nota valida!')
     exit()
