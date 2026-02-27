@@ -8,4 +8,4 @@ for par in contador:
     if par % 2 == 0:
         print(par)
         soma += par
-print(f'a soma dos numeros pares é: {soma}')
+print(f'a soma dos numeros pares digitados é: {soma}')
