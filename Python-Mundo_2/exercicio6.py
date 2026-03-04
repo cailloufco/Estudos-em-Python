@@ -41,7 +41,7 @@ Python = {escolhaDoPython}\n''')
 sleep(1.5)
 if (escolhaDoUsuario == 'Pedra' and escolhaDoPython == 'Tesoura') or (escolhaDoUsuario == 'Papel' and escolhaDoPython == 'Pedra') or (escolhaDoUsuario == 'Tesoura' and escolhaDoPython == 'Papel'):
     print('Você venceu!!!')
-elif escolhaDoPython == escolhaDoPython:
+elif escolhaDoUsuario == escolhaDoPython:
     print('Empate!!!')
 else:
     print('Você perdeu...')
