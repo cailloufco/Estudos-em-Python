@@ -10,7 +10,6 @@ numero_do_usuario = 0
 numero_do_python = randint(0, 20)
 resultado_numeros = None
 
-
 while True:
     try:
         escolha_do_usuario = int(input('Escolha PAR ou IMPAR\n[1]PAR\n[2]IMPAR : '))
@@ -43,7 +42,6 @@ while True:
         resultado_numeros = 'IMPAR'
     print(f'QUANDO SOMADO O NUMERO É {numero_do_python+numero_do_usuario} SENDO {resultado_numeros}')
     print('='*40), sleep(2.4)
-
 
     if escolha_do_usuario == 'PAR' and (numero_do_usuario + numero_do_python)%2 == 0:
         contador_vitorias += 1
