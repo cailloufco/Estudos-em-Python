@@ -6,5 +6,13 @@ valores_num = []
 for numero in range(5):
     numero = float(input(f'Digite um valor númerico!: {numero}º '))
     valores_num.append(numero)
+menor_indice = []
+maior_indice = []
 
-print(f'Os valores digitador foram {' , '.join(map(str , valores_num))}\nO maior valor listado foi {max(valores_num)} , na posição {valores_num.index(max(valores_num))}\nO menor valor listado foi {min(valores_num)} , na posição {valores_num.index(min(valores_num))}')
+for indice , valor  in enumerate(valores_num):
+    if valor == min(valores_num):
+        menor_indice.append(indice)
+    if valor == max(valores_num):
+        maior_indice.append(indice)
+        
+print(f'Os valores digitados foram: {' , '.join(map(str , valores_num))}\nO maior valor foi {max(valores_num)} na posição {' '.join(map(str , maior_indice))}\nO menor valor foi {min(valores_num)} na posição {' '.join(map(str , menor_indice))}')
