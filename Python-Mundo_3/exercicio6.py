@@ -1,7 +1,7 @@
 # Crie um programa que tenha uma tupla com varias palavras (não usar acentos).
 # Depois disso, você deve mostrar , para cada palavra quais são usas vogais.
 
-palavras = ('caneta','tesoura','jogador')
+palavras = ('caderno','tesoura','jogador')
 
 for palavra in palavras:
     vogais = []
