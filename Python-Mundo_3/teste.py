@@ -1,3 +1,4 @@
-lista  = [1,2,4,7]
-lista.append(5)
-print(lista)
+if -1:
+    print("True")
+else:
+    print("False")  # Isso será impresso
