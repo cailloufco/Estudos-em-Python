@@ -14,7 +14,7 @@ try:
 except:
     print('Faça uma escolha válida de 1 à 3!')
     exit()
-if escolhaDoUsuario > 3:
+if escolhaDoUsuario > 3 or escolhaDoUsuario <= 0:
     print('Faça uma escolha válida de 1 à 3!')
     exit()
 
